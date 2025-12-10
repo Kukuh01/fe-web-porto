@@ -1,3 +1,11 @@
+import PageLayout from "../components/layouts/PageLayout";
+
 export default function HomePage() {
-  return <p>Home Page</p>;
+  return (
+    <PageLayout>
+      <div>
+        <p>Ini halman home</p>
+      </div>
+    </PageLayout>
+  );
 }
