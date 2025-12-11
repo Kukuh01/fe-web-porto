@@ -1,11 +1,15 @@
 import PageLayout from "../components/layouts/PageLayout";
+import Hero from "../components/fragments/Hero/Hero";
+import IntroductionCard from "../components/fragments/IntroductionCard";
 
 export default function HomePage() {
   return (
     <PageLayout>
-      <div>
-        <p>Ini halman home</p>
-      </div>
+      {/* Start Hero */}
+      <Hero>
+        <IntroductionCard />
+      </Hero>
+      {/* End Hero */}
     </PageLayout>
   );
 }

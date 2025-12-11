@@ -6,7 +6,7 @@ export default function PageLayout({ children }: { children: ReactNode }) {
   return (
     <div className="bg-zinc-900">
       <Navbar />
-      <main>{children}</main>
+      <main className="max-w-7xl mx-auto mt-32">{children}</main>
       <Footer />
     </div>
   );
