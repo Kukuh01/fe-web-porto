@@ -1,4 +1,4 @@
-import Link from "../elements/Link/Link";
+import Link from "../elements/Link";
 
 export default function Navbar() {
   return (

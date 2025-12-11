@@ -1,5 +1,5 @@
 import { FaGithub, FaInstagram } from "react-icons/fa";
-import Icon from "../elements/Icon/Icon";
+import Icon from "../elements/Icon";
 
 export default function IntroductionCard() {
   return (

@@ -1,6 +1,7 @@
 import PageLayout from "../components/layouts/PageLayout";
-import Hero from "../components/fragments/Hero/Hero";
+import Hero from "../components/fragments/Hero";
 import IntroductionCard from "../components/fragments/IntroductionCard";
+import ProjectSection from "../components/fragments/Project/ProjectSection";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,8 @@ export default function HomePage() {
         <IntroductionCard />
       </Hero>
       {/* End Hero */}
+      {/* Project Section */}
+      <ProjectSection />
     </PageLayout>
   );
 }
