@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
+import { Link } from "react-router";
 
-export default function Link({
+export default function NavLink({
   children,
   href,
   className = "text-sm",
@@ -10,8 +11,8 @@ export default function Link({
   className?: string;
 }) {
   return (
-    <a href={href} className={className}>
+    <Link to={href} className={className}>
       {children}
-    </a>
+    </Link>
   );
 }

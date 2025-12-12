@@ -1,4 +1,4 @@
-import Link from "../elements/Link";
+import NavLink from "../elements/NavLink";
 
 export default function Navbar() {
   return (
@@ -12,10 +12,10 @@ export default function Navbar() {
           </div>
         </div>
         <div className="py-4 text-amber-50 w-xl flex justify-around">
-          <Link href="/">Home</Link>
-          <Link href="/contact">Contact</Link>
-          <Link href="/product">Products</Link>
-          <Link href="/article">Articles</Link>
+          <NavLink href="/">Home</NavLink>
+          <NavLink href="/projects">Projects</NavLink>
+          <NavLink href="/articles">Articles</NavLink>
+          <NavLink href="/contact">Contact</NavLink>
         </div>
       </div>
     </div>
