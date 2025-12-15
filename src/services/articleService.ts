@@ -1,14 +1,14 @@
 import axiosClient from "../api/axiosClient";
-import { Project } from "../types/type";
-import dummyData from "../data/projects.json";
+import { type Article } from "../types/type";
+import dummyData from "../data/articles.json";
 
 const USE_DUMMY = true;
 
-export async function getProjects(): Promise<Project[]> {
+export async function getArticles(): Promise<Article[]> {
   if (USE_DUMMY) {
     return dummyData;
   }
 
-  const res = await axiosClient.get("/projects");
+  const res = await axiosClient.get("/articles");
   return res.data;
 }

@@ -15,9 +15,10 @@ export interface Article {
   id: number;
   title: string;
   slug: string;
+  altText: string;
   content: string;
   thumbnailUrl: string;
-  category: string[];
+  categories: string[];
   publishedAt: string;
   likedBy: number;
 }

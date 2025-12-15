@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Profile Web SLB Talitakum",
+    "slug": "profile-web-slb-talitakum",
+    "description": "A school profile website built to showcase programs, activities, and information for SLB Talitakum. Designed with a modern and responsive UI.",
+    "status": "Deployed",
+    "techs": ["Laravel", "React", "Tailwind CSS", "MySQL"],
+    "imageUrl": "thumbnails/thumbnail-project.png",
+    "projectUrl": "https://slbtalitakum.sch.id",
+    "projectRepo": "https://github.com/yourusername/slb-talitakum-profile",
+    "likedBy": 120
+  },
+  {
+    "id": 2,
+    "title": "Online Learning Platform",
+    "slug": "online-learning-platform",
+    "description": "A fullstack web application for online learning with course management, authentication, and real-time interaction features.",
+    "status": "In Progress",
+    "techs": ["Laravel", "React", "TypeScript", "PostgreSQL"],
+    "imageUrl": "thumbnails/thumbnail-project.png",
+    "projectUrl": "https://learning-platform.demo",
+    "projectRepo": "https://github.com/yourusername/online-learning-platform",
+    "likedBy": 87
+  },
+  {
+    "id": 3,
+    "title": "Personal Portfolio Website",
+    "slug": "personal-portfolio-website",
+    "description": "A personal portfolio website to showcase projects, articles, and contact information. Focused on performance and clean UI.",
+    "status": "Deployed",
+    "techs": ["React", "Vite", "Tailwind CSS"],
+    "imageUrl": "thumbnails/thumbnail-project.png",
+    "projectUrl": "https://yourportfolio.dev",
+    "projectRepo": "https://github.com/yourusername/portfolio",
+    "likedBy": 203
+  },
+  {
+    "id": 4,
+    "title": "Project Management Dashboard",
+    "slug": "project-management-dashboard",
+    "description": "A dashboard application to manage tasks, projects, and team collaboration with role-based access control.",
+    "status": "On Hold",
+    "techs": ["React", "TypeScript", "Tailwind CSS", "Supabase"],
+    "imageUrl": "thumbnails/thumbnail-project.png",
+    "projectUrl": "https://pm-dashboard.demo",
+    "projectRepo": "https://github.com/yourusername/project-management-dashboard",
+    "likedBy": 45
+  }
+]
