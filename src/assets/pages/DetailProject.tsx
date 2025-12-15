@@ -2,7 +2,8 @@ import { FaCode } from "react-icons/fa";
 import PageLayout from "../components/layouts/PageLayout";
 import { PiGlobe } from "react-icons/pi";
 import ContactSection from "../components/fragments/Contact/ContactSection";
-import Carousel from "../components/fragments/Carousel/Carousel";
+import Carousel from "../components/fragments/Carousel/CarouselV1";
+import CarouselV2 from "../components/fragments/Carousel/CarouselV2";
 
 export default function DetailProject() {
   return (
@@ -19,7 +20,7 @@ export default function DetailProject() {
       </div>
 
       {/* Start Carousel */}
-      <Carousel />
+      <CarouselV2 />
       {/* End Carousel */}
 
       {/* End Header */}
