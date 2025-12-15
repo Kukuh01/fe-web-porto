@@ -19,7 +19,7 @@ export default function ArtilceSection() {
           <ArticleCard
             key={article.id}
             thumbnailUrl={article.thumbnailUrl}
-            altText={article.slug}
+            slug={article.slug}
             title={article.title}
             publishedAt={article.publishedAt}
             categories={article.categories}

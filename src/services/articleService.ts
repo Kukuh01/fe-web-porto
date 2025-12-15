@@ -12,3 +12,12 @@ export async function getArticles(): Promise<Article[]> {
   const res = await axiosClient.get("/articles");
   return res.data;
 }
+
+export async function getArtilceByslug(slug: string): Promise<Article> {
+  if (USE_DUMMY) {
+    return dummyData.find((article) => article.slug === slug)!;
+  }
+
+  const res = await axiosClient.get(`/articles/${slug}`);
+  return res.data;
+}
