@@ -2,12 +2,13 @@ import { FaCode } from "react-icons/fa";
 import PageLayout from "../components/layouts/PageLayout";
 import { PiGlobe } from "react-icons/pi";
 import ContactSection from "../components/fragments/Contact/ContactSection";
-import Carousel from "../components/fragments/Carousel/CarouselV1";
 import CarouselV2 from "../components/fragments/Carousel/CarouselV2";
+import useScrollContact from "../../hooks/useScrollContact";
 
 export default function DetailProject() {
+  const { contactRef, handleContactClick } = useScrollContact();
   return (
-    <PageLayout>
+    <PageLayout onContactClick={handleContactClick}>
       {/* Start Header */}
       <div className="relative flex items-center">
         <p className="text-4xl font-bold text-amber-50 mx-auto">
@@ -80,7 +81,9 @@ export default function DetailProject() {
         </div>
         {/* End Box  */}
       </div>
-      <ContactSection />
+      <div ref={contactRef}>
+        <ContactSection />
+      </div>
     </PageLayout>
   );
 }

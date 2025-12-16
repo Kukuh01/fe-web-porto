@@ -3,10 +3,12 @@ import CategoryTag from "../components/elements/CategoryTag";
 import ContactSection from "../components/fragments/Contact/ContactSection";
 import DateBox from "../components/fragments/DateBox";
 import PageLayout from "../components/layouts/PageLayout";
+import useScrollContact from "../../hooks/useScrollContact";
 
 export default function DetailArticle() {
+  const { contactRef, handleContactClick } = useScrollContact();
   return (
-    <PageLayout>
+    <PageLayout onContactClick={handleContactClick}>
       <div>
         {/* Start Header */}
         <div className="mb-14">
@@ -47,7 +49,9 @@ export default function DetailArticle() {
           </div>
         </div>
       </div>
-      <ContactSection />
+      <div ref={contactRef}>
+        <ContactSection />
+      </div>
     </PageLayout>
   );
 }
