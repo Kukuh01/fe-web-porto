@@ -5,6 +5,7 @@ import ProjectSection from "../components/fragments/Project/ProjectSection";
 import ArtilceSection from "../components/fragments/Article/ArticleSection";
 import ContactSection from "../components/fragments/Contact/ContactSection";
 import useScrollContact from "../../hooks/useScrollContact";
+import ShowMore from "../components/elements/Button/ShowMore";
 
 export default function HomePage() {
   const { contactRef, handleContactClick } = useScrollContact();
@@ -18,8 +19,14 @@ export default function HomePage() {
       {/* End Hero */}
       {/* Project Section */}
       <ProjectSection />
+      <div className="flex justify-center">
+        <ShowMore />
+      </div>
       {/* Article Section */}
       <ArtilceSection />f
+      <div className="flex justify-center">
+        <ShowMore />
+      </div>
       <div ref={contactRef}>
         <ContactSection />
       </div>

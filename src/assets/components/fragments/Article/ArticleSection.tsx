@@ -14,7 +14,7 @@ export default function ArtilceSection() {
 
   return (
     <SectionLayout title="My Articles" description="Recent Articles">
-      <div className="flex flex-col mb-14 gap-8">
+      <div className="flex flex-col gap-8">
         {articles.slice(0, 2).map((article) => (
           <ArticleCard
             key={article.id}
@@ -26,9 +26,6 @@ export default function ArtilceSection() {
             content={article.content}
           />
         ))}
-      </div>
-      <div className="flex justify-center">
-        <ShowMore />
       </div>
     </SectionLayout>
   );

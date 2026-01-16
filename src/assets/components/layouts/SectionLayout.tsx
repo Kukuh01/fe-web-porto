@@ -11,7 +11,7 @@ export default function SectionLayout({
 }) {
   return (
     <div>
-      <hr className="text-gray-800" />
+      <hr className="text-gray-800 mt-14" />
       <div className="mt-6 mb-10">
         <div className="mb-10">
           <p className="text-2xl text-amber-50">{title}</p>
