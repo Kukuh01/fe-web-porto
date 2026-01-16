@@ -6,7 +6,7 @@ export default function Navbar({
   onContactClick: () => void;
 }) {
   return (
-    <div className="sticky top-0 z-50 w-full h-20 flex items-center justify-center">
+    <div className="hidden sticky top-0 z-50 w-full md:h-20 md:flex items-center justify-center">
       <div className="w-3xl h-fit border-1 border-orange-700 rounded-4xl flex justify-between backdrop-blur bg-zinc-900/80">
         <div className="w-md rounded-3xl bg-orange-700 py-4 text-amber-50 font-bold relative">
           <div className="absolute left-5">

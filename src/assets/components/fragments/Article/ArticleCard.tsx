@@ -20,17 +20,17 @@ export default function ArticleCard({
   categories,
 }: ArticleCardProps) {
   return (
-    <div className="flex">
+    <div className="flex flex-col lg:flex-row lg:gap-8">
       <Link to={`/article/${slug}`}>
-        <div className="w-fit bg-zinc-800  mb-4 mr-14 rounded-2xl">
+        <div className="w-full bg-zinc-800 mr-14 rounded-2xl">
           <img
-            className="w-xl h-80 rounded-2xl"
+            className="w-full h-80 rounded-2xl"
             src={thumbnailUrl}
             alt={slug}
           />
         </div>
       </Link>
-      <div className="w-xl space-y-2">
+      <div className="w-full space-y-2 lg:w-xl">
         <div className="text-2xl font-bold text-amber-50">{title}</div>
         <Date publishedAt={publishedAt} />
         <div className="text-amber-50 text-lg mb-4">

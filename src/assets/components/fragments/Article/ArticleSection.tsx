@@ -14,7 +14,7 @@ export default function ArtilceSection() {
 
   return (
     <SectionLayout title="My Articles" description="Recent Articles">
-      <div className="space-y-4 mb-14">
+      <div className="flex flex-col mb-14 gap-8">
         {articles.slice(0, 2).map((article) => (
           <ArticleCard
             key={article.id}

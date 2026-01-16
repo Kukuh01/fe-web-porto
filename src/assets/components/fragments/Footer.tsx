@@ -4,10 +4,10 @@ import NavLink from "../elements/NavLink";
 
 export default function Footer() {
   return (
-    <div className="w-full h-72 bg-slate-900 pt-10">
+    <div className="w-full h-full bg-slate-900 pt-10">
       <div className="max-w-7xl mx-auto">
         <div className="w-full flex justify-between mb-6">
-          <div className="flex space-x-5">
+          <div className="flex flex-col lg:flex-row gap-3">
             <Icon href="https://github.com/Kukuh01">
               <FaGithub />
             </Icon>
@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <hr className="text-gray-800 mb-5" />
+        <hr className="text-gray-800 mb-5 w-full" />
         <p className="text-center text-xl text-gray-500">
           @ 2025 Silvanus Kukuh Prasetyo . All rights reserved
         </p>

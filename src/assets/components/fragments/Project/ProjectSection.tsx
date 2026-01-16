@@ -14,7 +14,7 @@ export default function ProjectSection() {
 
   return (
     <SectionLayout title="My Work" description="Recent Projects">
-      <div className="flex justify-between mb-14">
+      <div className="flex flex-col lg:flex-row justify-between mb-14 gap-8">
         {projects.slice(0, 2).map((project) => (
           <ProjectCard
             image={project.imageUrl}
