@@ -1,6 +1,6 @@
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import Icon from "../elements/Icon";
-import NavLink from "../elements/NavLink";
+import NavLink from "../elements/NavLinkv2";
 
 export default function Footer() {
   return (
@@ -21,7 +21,6 @@ export default function Footer() {
               <NavLink href="/">Home</NavLink>
               <NavLink href="/projects">Projects</NavLink>
               <NavLink href="/articles">Articles</NavLink>
-              <NavLink href="/contact">Contact</NavLink>
             </div>
             <div className="flex flex-col text-amber-50 space-y-2">
               <p className="text-2xl text-amber-50">Contact Me</p>

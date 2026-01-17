@@ -1,4 +1,4 @@
-import NavLink from "../elements/NavLink";
+import NavLink from "../elements/NavLinkv2";
 
 export default function Navbar({
   onContactClick,

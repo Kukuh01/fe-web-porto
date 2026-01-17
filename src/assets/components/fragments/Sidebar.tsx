@@ -3,14 +3,15 @@ import {
   Menu,
   X,
   Home,
-  User,
   Briefcase,
   Mail,
   type LucideIcon,
+  BookAIcon,
 } from "lucide-react";
 import { type IconType } from "react-icons";
 
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router";
 
 type MenuItem = {
   icon: LucideIcon;
@@ -29,10 +30,9 @@ export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems: MenuItem[] = [
-    { icon: Home, label: "Home", href: "#home" },
-    { icon: User, label: "About", href: "#about" },
-    { icon: Briefcase, label: "Projects", href: "#projects" },
-    { icon: Mail, label: "Contact", href: "#contact" },
+    { icon: Home, label: "Home", href: "/" },
+    { icon: Briefcase, label: "Projects", href: "/projects" },
+    { icon: BookAIcon, label: "Articles", href: "/articles" },
   ];
 
   const socialLinks: SocialItem[] = [
@@ -86,9 +86,9 @@ export default function Sidebar() {
           {/* NAVIGATION */}
           <nav className="space-y-2 flex-1">
             {menuItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 onClick={() => setIsOpen(false)}
                 className="flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-indigo-50 group"
               >
@@ -99,8 +99,22 @@ export default function Sidebar() {
                 <span className="font-medium text-amber-50 group-hover:text-indigo-600">
                   {item.label}
                 </span>
-              </a>
+              </Link>
             ))}
+            {/* CONTACT (ANCHOR SCROLL) */}
+            <a
+              href="#contact"
+              onClick={() => setIsOpen(false)}
+              className="flex items-center gap-4 px-4 py-3 rounded-xl hover:bg-indigo-50 group"
+            >
+              <Mail
+                size={20}
+                className="text-amber-50 group-hover:text-indigo-600"
+              />
+              <span className="font-medium text-amber-50 group-hover:text-indigo-600">
+                Contact
+              </span>
+            </a>
           </nav>
           {/* SOCIAL */}
           <div className="border-t border-slate-200 pt-6">

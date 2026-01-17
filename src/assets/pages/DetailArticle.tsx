@@ -1,4 +1,3 @@
-import { FcLike } from "react-icons/fc";
 import CategoryTag from "../components/elements/CategoryTag";
 import ContactSection from "../components/fragments/Contact/ContactSection";
 import DateBox from "../components/fragments/DateBox";
