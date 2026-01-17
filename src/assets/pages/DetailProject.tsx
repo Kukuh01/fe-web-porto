@@ -10,11 +10,11 @@ export default function DetailProject() {
   return (
     <PageLayout onContactClick={handleContactClick}>
       {/* Start Header */}
-      <div className="relative flex items-center">
-        <p className="text-4xl font-bold text-amber-50 mx-auto">
+      <div className="relative flex flex-col">
+        <p className="text-4xl font-bold text-amber-50 mx-auto mb-5 lg:mb-0">
           Profile Web SLB Talitakum
         </p>
-        <div className="absolute right-0 bg-zinc-800 flex items-center p-2 rounded-3xl space-x-3">
+        <div className="w-40 bg-zinc-800 flex items-center p-2 rounded-3xl space-x-3 lg:absolute lg:right-0">
           <div className="w-3 h-3 rounded-full bg-amber-300"></div>
           <p className="text-zinc-400 text-lg">On Progress</p>
         </div>
@@ -26,20 +26,20 @@ export default function DetailProject() {
 
       {/* End Header */}
       <hr className="text-gray-800" />
-      <div className="flex justify-between mt-5 mb-10">
+      <div className="flex justify-between mt-5 mb-10 flex-col lg:flex-row gap-8">
         {/* Start Content */}
-        <div className="w-3xl">
+        <div className="w-full">
           <div className="space-y-5">
             <p className="text-3xl text-orange-600 font-bold">
               Description Program
             </p>
             {/* Start Widget */}
             <div className="flex space-x-3">
-              <div className="text-2xl text-zinc-400 flex bg-zinc-800 w-fit px-3 py-1 rounded-4xl items-center space-x-3">
+              <div className="text-xl text-zinc-400 flex bg-zinc-800 w-fit px-3 py-1 rounded-4xl items-center space-x-3">
                 <FaCode />
                 <p>Code</p>
               </div>
-              <div className="text-2xl text-zinc-400 flex bg-zinc-800 w-fit px-3 py-1 rounded-4xl items-center space-x-3">
+              <div className="text-xl text-zinc-400 flex bg-zinc-800 w-fit px-3 py-1 rounded-4xl items-center space-x-3">
                 <PiGlobe />
                 <p>Visit</p>
               </div>
@@ -66,7 +66,7 @@ export default function DetailProject() {
         </div>
         {/* End Content */}
         {/* Start Box  */}
-        <div className="w-1xl">
+        <div className="w-full lg:w-xl">
           <p className="text-2xl text-amber-50 font-bold text-center">
             Tech Stack
           </p>

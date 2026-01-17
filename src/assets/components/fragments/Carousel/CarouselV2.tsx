@@ -31,7 +31,7 @@ export default function CarouselV2() {
       <Swiper
         breakpoints={{
           340: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 15,
           },
           700: {
@@ -70,10 +70,8 @@ export default function CarouselV2() {
                 alt=""
               />
 
-              {/* Overlay gelap (tidak menangkap event) */}
               <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition pointer-events-none" />
 
-              {/* Zoom Icon (clickable kecil) */}
               <button
                 onClick={() => setSelectedImage(img)}
                 className="absolute bottom-3 right-3 z-10 bg-black/60 p-2 rounded-full
