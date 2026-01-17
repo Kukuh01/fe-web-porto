@@ -11,9 +11,9 @@ export default function DetailArticle() {
     <PageLayout onContactClick={handleContactClick}>
       <div>
         {/* Start Header */}
-        <div className="mb-14">
+        <div className="mb-14 w-full flex flex-col">
           <p className="text-4xl text-amber-50">Article Title</p>
-          <div className="space-x-20 flex">
+          <div className="flex flex-col lg:flex-row gap-4">
             <DateBox />
             <div className="flex space-x-5">
               <CategoryTag>technology</CategoryTag>
@@ -23,15 +23,11 @@ export default function DetailArticle() {
         </div>
         {/* End Header */}
         {/* Start Thumbnail */}
-        <div className="w-2xl h-96 bg-amber-50 rounded-2xl mx-auto">
+        <div className="w-full lg:w-2xl h-96 bg-amber-50 rounded-2xl mx-auto">
           <img src="" alt="" />
         </div>
         {/* End Thumbnail */}
         <div className="mt-5 mb-20 text-amber-50 text-base">
-          <div className="flex items-center space-x-3">
-            <FcLike className="text-3xl" />
-            <p>999 Likes</p>
-          </div>
           <div className="mt-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
             dolor eveniet fuga doloremque voluptate similique adipisci id

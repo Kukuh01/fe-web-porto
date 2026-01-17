@@ -1,5 +1,3 @@
-import { div } from "motion/react-client";
-
 export default function Pagination() {
   return (
     <div className="flex justify-center">
