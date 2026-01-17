@@ -5,3 +5,14 @@
     font-family: "Plus Jakarta Sans", sans-serif;
   }
 }
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  color: red; /* ungu */
+}
+
+/* HOVER */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: red;
+}
